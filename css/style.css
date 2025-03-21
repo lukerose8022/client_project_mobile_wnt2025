@@ -1,0 +1,192 @@
+header {
+    background-color: #00274c;
+    border-bottom: 5px solid #ffcb05;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 99;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    /* display: flex; */
+    padding-top: 50px
+}
+
+nav li {
+    display:inline;
+    padding-left: 10px;
+    padding-right:20px;
+}
+
+nav li:not(:first-child) {
+    padding-bottom: 40px;
+}
+
+.umich-logo {
+    padding-left: 1.1%;
+    padding-right: 10px;
+    width: auto; 
+    height: 60px; 
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}   
+
+.skip a{
+    color: black;
+    background: #e0ffff;
+    left: 0;
+    padding: 5px;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    overflow: hidden;
+  }
+
+.skip a:focus{
+    top:20px;
+}
+
+*:focus{
+    outline: 2px solid #a0522d	;
+    border: 2px solid #a0522d;
+}
+
+nav a:hover, nav a:focus{
+    text-decoration: underline 2px;
+}
+
+li.active a {
+    color: #FFCB05;
+}
+
+  body{
+    margin: 0;
+    font-family:sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #131516;
+    text-align: left;
+  }
+
+.introduction {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/backround.png");
+    height: auto;
+    text-align: center;
+    padding: 5%;
+    border-bottom: 0.25rem solid #ffcb05;
+    grid-column: 1/-1;
+}
+
+.introduction p {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    background: #00274C;
+    color: white;
+    font-size: 24px;
+    padding: 10px 50px;
+    text-align: center;
+    border: 7px outset #ffcb05;
+}
+
+ h1:first-of-type {
+    font-size: 200%;
+    color: #00274C;
+    line-height: 1;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: -.016em;
+    margin: 1em;
+    /* border-bottom: 0.25rem solid #ffcb05; */
+    /* background: #00274C */
+  }
+
+  h2{
+    font-size: 32px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color:#00274C;
+    font-weight: bold;
+}
+
+h3{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #00274C;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-top: 3px solid #ffcb05;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  footer a:visited {
+    color: lightgray;
+  }
+
+  footer a:hover {
+    color: #ffcb05;
+  }
+
+footer a:active {
+    color: white;
+  }
+
+.container{
+    display:grid;
+    grid-template-columns:1fr 5fr 1fr;
+    gap:15px;
+    padding-bottom: 2%;
+}
+
+.one, .two, .three {
+    grid-column:2;
+}
+
+.one {
+    grid-row: 2;
+}
+
+.two {
+    /* grid-column: 2/span 2; */
+    grid-row: 3;
+}
+
+.three {
+    /* grid-column: 1/span 2; */
+    grid-row: 4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
